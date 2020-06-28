@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 50px auto;
+}
+
+.block1 {
+  width: 400px;
+  height: 267px;
+  background-image: url("../img/img2.png"), url("../img/img1.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%, 100% 100%;
+}
+
+.block2 {
+  width: 600px;
+  height: 267px;
+  background: #ff0000 url("../img/img1.jpg") 100% 100% no-repeat;
+  background: url("../img/img2.png") 100% 100% no-repeat, #ff0000 url("../img/img1.jpg") 100% 100% no-repeat;
+}
+
+.block3 {
+  width: 400px;
+  height: 267px;
+  background: 
+  url("../img/img2.png") no-repeat 100% 100%,
+  url("../img/img2.png") no-repeat 0% 0%,
+  url("../img/img2.png") no-repeat 50% 50%,
+  url("../img/img1.jpg") no-repeat 50% 50%;
+  background-size: 100px 50px, 10px 20px, 50px 50px, auto;
+}
+
+.block4 {
+  width: 400px;
+  height: 267px;
+  border: 10px solid #000;  
+  background: #ff0000 url("../img/img2.png") no-repeat 100% 100%;
+  -moz-background-clip: content;
+  -webkit-background-clip: content;
+  -webkit-background-clip: content-box;   
+  background-clip: content-box;
+  padding: 10px;
+}
+
+.block5 {
+  width: 400px;
+  height: 267px;
+  border: 10px dotted #000;  
+  background: #ff0000 url("../img/img2.png") no-repeat 100% 100%;
+  -moz-background-origin: content;
+  -webkit-background-origin: content;
+  -webkit-background-origin: content-box;   
+  background-origin: content-box;
+  padding: 10px;
+}

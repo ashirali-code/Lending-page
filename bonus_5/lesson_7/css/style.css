@@ -1,0 +1,15 @@
+/* .block1 p {
+  font-family: 'Lobster', cursive;
+} */
+
+@font-face {
+  font-family: 'HattoryHanzoLight';
+  src: url(../fonts/Hattori_Hanzo-webfont.eot);
+  src: url(../fonts/Hattori_Hanzo-webfont.ttf) format('truetype'),
+       url(../fonts/Hattori_Hanzo-webfont.woff) format('woff'),
+       url(../fonts/Hattori_Hanzo-webfont.svg) format('svg');
+}
+
+.block1 p {
+  font-family: HattoryHanzoLight;
+}

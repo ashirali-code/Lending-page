@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.main {
+  margin: 50px auto;
+  width: 500px;
+}
+
+a[href^="mailto"] {
+  background: url(../image/ico-mail.png) left 5px no-repeat;
+  padding: 2px 0 2px 23px;
+}
+
+a[href^="ftp://"] {
+  background: url(../image/ico-ftp.png) left 5px no-repeat;
+  padding: 2px 0 2px 23px;
+}
+
+a[href$='.pdf'] {
+  background: url(../image/ico-pdf.gif) left 3px no-repeat;
+  padding: 2px 0 2px 23px;
+}
+
+a[href$='.docx'] {
+  background: url(../image/ico-doc.gif) left 3px no-repeat;
+  padding: 2px 0 2px 23px;
+}
+
+a[href$='.zip'] {
+  background: url(../image/ico-rar.gif) left 3px no-repeat;
+  padding: 2px 0 2px 23px;
+}
+
+img[title*='city'] {
+  padding: 10px;
+  border: 1px solid #ff0000;
+}
+
+a[href^='ftp://'][href$='.pdf'] {
+  background: url(../image/ico-pdf.gif) 23px 3px no-repeat, url(../image/ico-ftp.png) left 5px no-repeat;
+  padding: 2px 0 2px 48px;
+}
+
+

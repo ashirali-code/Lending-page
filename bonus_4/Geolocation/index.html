@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Geolocation</h1>
+  </header>
+  <section>
+    <script>
+      function getCoordinat (){
+        navigator.geolocation.getCurrentPosition(showCoordinat, showError);
+      }
+
+      function showCoordinat(position) {
+        document.write('Широта' + position.coords.latitude + '<br>');
+        document.write('Долгота' + position.coords.longitude + '<br>');
+        document.write('Точность' + position.coords.accuracy + '<br>');
+      }
+      function showError(error) {
+        switch(error.code){
+          case error.PERMISSION_DENIED:
+            alert("Пользователь запретил считывать информацию о его местоположении.");
+          break;
+          case error.POSITION_UNAVAILABLE:
+            alert("Браузер не смог определить местополежение пользователя.");
+          break;
+          case error.TIMEOUT:
+            alert("Браузер не успел определить местоположение за выделенную ему время.");
+          break;
+          case error.UNKNOWN_ERROR:
+            alert("Произошла неопределенная ошибка.");
+          break;
+        }
+      }
+      getCoordinat();
+    </script>
+  </section>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  width: 300px;
+  margin: 30px auto;
+  height: 80px;
+  font: 30px Arial;
+  border: 2px solid #ff0000;
+  line-height: 1;
+  padding: 20px 0 0 0;
+  text-align: center;
+  background: #036;
+  color: #fff;
+}
+
+.ex1 {
+  -ms-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+  transform-origin: 50% 100%;
+}
+
+.ex2 {
+  transform: translate(20px, 0px);
+}
+
+.ex3 {
+  transform: skew(0deg, 0deg);
+}
+
+.ex4 {
+  transform: scale(2, 1.5);
+}
+
+.ex5 {
+  transform: rotate(45deg) scale(0.75) translate(75%, -100px);
+}
+
+.ex6 {
+  transform: matrix(1.5, 0.2, 0, 0.5, 0, 0);
+}
